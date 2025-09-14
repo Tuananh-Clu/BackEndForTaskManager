@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\BE\\TaskManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A331DD0-6E59-47D0-AB17-AC9C8071846F}|TaskManager\\TaskManager.csproj|d:\\be\\taskmanager\\taskmanager\\service\\taskconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A331DD0-6E59-47D0-AB17-AC9C8071846F}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\service\\taskconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A331DD0-6E59-47D0-AB17-AC9C8071846F}|TaskManager\\TaskManager.csproj|d:\\be\\taskmanager\\taskmanager\\model\\taskproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A331DD0-6E59-47D0-AB17-AC9C8071846F}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\model\\taskproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A331DD0-6E59-47D0-AB17-AC9C8071846F}|TaskManager\\TaskManager.csproj|d:\\be\\taskmanager\\taskmanager\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A331DD0-6E59-47D0-AB17-AC9C8071846F}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A331DD0-6E59-47D0-AB17-AC9C8071846F}|TaskManager\\TaskManager.csproj|d:\\be\\taskmanager\\taskmanager\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A331DD0-6E59-47D0-AB17-AC9C8071846F}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A331DD0-6E59-47D0-AB17-AC9C8071846F}|TaskManager\\TaskManager.csproj|d:\\be\\taskmanager\\taskmanager\\context\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A331DD0-6E59-47D0-AB17-AC9C8071846F}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\context\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A331DD0-6E59-47D0-AB17-AC9C8071846F}|TaskManager\\TaskManager.csproj|d:\\be\\taskmanager\\taskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A331DD0-6E59-47D0-AB17-AC9C8071846F}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 326,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\BE\\TaskManager\\TaskManager\\Model\\User.cs",
+              "RelativeDocumentMoniker": "TaskManager\\Model\\User.cs",
+              "ToolTip": "D:\\BE\\TaskManager\\TaskManager\\Model\\User.cs",
+              "RelativeToolTip": "TaskManager\\Model\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T08:41:29.188Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TaskProperty.cs",
+              "DocumentMoniker": "D:\\BE\\TaskManager\\TaskManager\\Model\\TaskProperty.cs",
+              "RelativeDocumentMoniker": "TaskManager\\Model\\TaskProperty.cs",
+              "ToolTip": "D:\\BE\\TaskManager\\TaskManager\\Model\\TaskProperty.cs",
+              "RelativeToolTip": "TaskManager\\Model\\TaskProperty.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T13:43:03.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TaskConfig.cs",
+              "DocumentMoniker": "D:\\BE\\TaskManager\\TaskManager\\Service\\TaskConfig.cs",
+              "RelativeDocumentMoniker": "TaskManager\\Service\\TaskConfig.cs",
+              "ToolTip": "D:\\BE\\TaskManager\\TaskManager\\Service\\TaskConfig.cs",
+              "RelativeToolTip": "TaskManager\\Service\\TaskConfig.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T03:28:10.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\BE\\TaskManager\\TaskManager\\Program.cs",
+              "RelativeDocumentMoniker": "TaskManager\\Program.cs",
+              "ToolTip": "D:\\BE\\TaskManager\\TaskManager\\Program.cs",
+              "RelativeToolTip": "TaskManager\\Program.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAD8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T12:40:07.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MongoDBContext.cs",
+              "DocumentMoniker": "D:\\BE\\TaskManager\\TaskManager\\Context\\MongoDBContext.cs",
+              "RelativeDocumentMoniker": "TaskManager\\Context\\MongoDBContext.cs",
+              "ToolTip": "D:\\BE\\TaskManager\\TaskManager\\Context\\MongoDBContext.cs",
+              "RelativeToolTip": "TaskManager\\Context\\MongoDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T08:42:28.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "D:\\BE\\TaskManager\\TaskManager\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "TaskManager\\Controllers\\TaskController.cs",
+              "ToolTip": "D:\\BE\\TaskManager\\TaskManager\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "TaskManager\\Controllers\\TaskController.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAF0AAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T03:46:32.835Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 74,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
