@@ -17,7 +17,7 @@ builder.Services.AddCors(a =>
 {
     a.AddPolicy("AllowAll", p =>
     {
-        p.AllowAnyOrigin()
+        p.WithOrigins("http://localhost:5173/", "https://taskmanager-ten-black.vercel.app/")
          .AllowAnyMethod()
          .AllowAnyHeader();
     });

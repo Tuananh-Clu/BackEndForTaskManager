@@ -33,13 +33,9 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 317,
+          "DockedHeight": 326,
           "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -52,6 +48,10 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-11T08:41:29.188Z",
               "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -112,13 +112,12 @@
               "RelativeToolTip": "TaskManager\\Controllers\\TaskController.cs",
               "ViewState": "AgIAAGwAAAAAAAAAAAAAAF0AAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T03:46:32.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-11T03:46:32.835Z"
             }
           ]
         },
         {
-          "DockedHeight": 83,
+          "DockedHeight": 74,
           "SelectedChildIndex": -1,
           "Children": [
             {

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\BE\\TaskManager\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2A331DD0-6E59-47D0-AB17-AC9C8071846F}|TaskManager\\TaskManager.csproj|d:\\be\\taskmanager\\taskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A331DD0-6E59-47D0-AB17-AC9C8071846F}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2A331DD0-6E59-47D0-AB17-AC9C8071846F}|TaskManager\\TaskManager.csproj|d:\\be\\taskmanager\\taskmanager\\service\\taskconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A331DD0-6E59-47D0-AB17-AC9C8071846F}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\service\\taskconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2A331DD0-6E59-47D0-AB17-AC9C8071846F}|TaskManager\\TaskManager.csproj|d:\\be\\taskmanager\\taskmanager\\context\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A331DD0-6E59-47D0-AB17-AC9C8071846F}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\context\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A331DD0-6E59-47D0-AB17-AC9C8071846F}|TaskManager\\TaskManager.csproj|d:\\be\\taskmanager\\taskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A331DD0-6E59-47D0-AB17-AC9C8071846F}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +34,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 326,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\BE\\TaskManager\\TaskManager\\Model\\User.cs",
               "RelativeDocumentMoniker": "TaskManager\\Model\\User.cs",
@@ -55,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TaskProperty.cs",
               "DocumentMoniker": "D:\\BE\\TaskManager\\TaskManager\\Model\\TaskProperty.cs",
               "RelativeDocumentMoniker": "TaskManager\\Model\\TaskProperty.cs",
@@ -67,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TaskConfig.cs",
               "DocumentMoniker": "D:\\BE\\TaskManager\\TaskManager\\Service\\TaskConfig.cs",
               "RelativeDocumentMoniker": "TaskManager\\Service\\TaskConfig.cs",
@@ -80,19 +80,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\BE\\TaskManager\\TaskManager\\Program.cs",
               "RelativeDocumentMoniker": "TaskManager\\Program.cs",
-              "ToolTip": "D:\\BE\\TaskManager\\TaskManager\\Program.cs",
-              "RelativeToolTip": "TaskManager\\Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAAD8AAAAEAAAAAAAAAA==",
+              "ToolTip": "D:\\BE\\TaskManager\\TaskManager\\Program.cs*",
+              "RelativeToolTip": "TaskManager\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T12:40:07.345Z"
+              "WhenOpened": "2025-09-11T12:40:07.345Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MongoDBContext.cs",
               "DocumentMoniker": "D:\\BE\\TaskManager\\TaskManager\\Context\\MongoDBContext.cs",
               "RelativeDocumentMoniker": "TaskManager\\Context\\MongoDBContext.cs",
@@ -104,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "TaskController.cs",
               "DocumentMoniker": "D:\\BE\\TaskManager\\TaskManager\\Controllers\\TaskController.cs",
               "RelativeDocumentMoniker": "TaskManager\\Controllers\\TaskController.cs",
@@ -138,11 +139,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Bookmark",

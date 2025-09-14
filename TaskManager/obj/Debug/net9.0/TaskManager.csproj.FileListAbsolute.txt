@@ -151,3 +151,4 @@ D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\TaskManager.pdb
 D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\TaskManager.genruntimeconfig.cache
 D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\ref\TaskManager.dll
 D:\BE\TaskManager\TaskManager\bin\Debug\net9.0\Altinn.Common.Authentication.dll
+D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\TaskManager.sourcelink.json
