@@ -95,6 +95,11 @@ if (app.Environment.IsDevelopment())
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "TaskManager API V1");
     });
 }
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "TaskManager API V1");
+});
 
 app.UseHttpsRedirection();
 app.UseCors("AllowAll");
