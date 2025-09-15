@@ -12,6 +12,7 @@ D:\BE\TaskManager\TaskManager\bin\Debug\net9.0\BCrypt.Net-Next.dll
 D:\BE\TaskManager\TaskManager\bin\Debug\net9.0\DnsClient.dll
 D:\BE\TaskManager\TaskManager\bin\Debug\net9.0\Humanizer.dll
 D:\BE\TaskManager\TaskManager\bin\Debug\net9.0\JWT.dll
+D:\BE\TaskManager\TaskManager\bin\Debug\net9.0\Altinn.Common.Authentication.dll
 D:\BE\TaskManager\TaskManager\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\BE\TaskManager\TaskManager\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
 D:\BE\TaskManager\TaskManager\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -138,17 +139,16 @@ D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\TaskManager.AssemblyInfo.cs
 D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\TaskManager.csproj.CoreCompileInputs.cache
 D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\TaskManager.MvcApplicationPartsAssemblyInfo.cs
 D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\TaskManager.MvcApplicationPartsAssemblyInfo.cache
+D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\TaskManager.sourcelink.json
 D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\scopedcss\bundle\TaskManager.styles.css
 D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\staticwebassets.build.json
 D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\staticwebassets.build.json.cache
 D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\staticwebassets.development.json
 D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\TaskMana.F3FB485A.Up2Date
 D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\TaskManager.dll
 D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\refint\TaskManager.dll
 D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\TaskManager.pdb
 D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\TaskManager.genruntimeconfig.cache
 D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\ref\TaskManager.dll
-D:\BE\TaskManager\TaskManager\bin\Debug\net9.0\Altinn.Common.Authentication.dll
-D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\TaskManager.sourcelink.json
+D:\BE\TaskManager\TaskManager\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

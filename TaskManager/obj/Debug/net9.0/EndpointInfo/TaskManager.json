@@ -485,12 +485,11 @@
             "nullable": true
           },
           "createdAt": {
-            "type": "string",
-            "format": "date-time"
+            "minLength": 1,
+            "type": "string"
           },
           "startedAt": {
             "type": "string",
-            "format": "date-time",
             "nullable": true
           },
           "dueAt": {
@@ -508,7 +507,6 @@
           },
           "reminderAt": {
             "type": "string",
-            "format": "date-time",
             "nullable": true
           },
           "progress": {
@@ -519,7 +517,7 @@
           "subTasks": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/subTask"
+              "$ref": "#/components/schemas/subTasks"
             },
             "nullable": true
           },
@@ -535,10 +533,10 @@
         },
         "additionalProperties": false
       },
-      "subTask": {
+      "subTasks": {
         "type": "object",
         "properties": {
-          "id": {
+          "subTaskId": {
             "type": "string",
             "nullable": true
           },

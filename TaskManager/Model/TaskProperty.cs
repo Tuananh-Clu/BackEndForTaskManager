@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
-
+[BsonIgnoreExtraElements]
 public class TaskProperty
 {
     [BsonId]
@@ -28,32 +28,33 @@ public class TaskProperty
     public int? actualMin { get; set; }
 
     [Required]
-    public DateTime createdAt { get; set; }
-
-    public DateTime? startedAt { get; set; }
-
+    [BsonRepresentation(BsonType.String)]
+    public string createdAt { get; set; }
+    [BsonRepresentation(BsonType.String)]
+    public string? startedAt { get; set; }
+    [BsonRepresentation(BsonType.String)]
     public DateTime? dueAt { get; set; }
-
+    [BsonRepresentation(BsonType.String)]
     public string completedAt { get; set; }
 
     public string repeat { get; set; } = "none";
-
-    public DateTime? reminderAt { get; set; }
+    [BsonRepresentation(BsonType.String)]
+    public string? reminderAt { get; set; }
 
     public double? progress { get; set; }
-
-    public List<subTask>? subTasks { get; set; }
+    [BsonElement("subTasks")]
+    public List<subTasks>? subTasks { get; set; }
 
     public double? procrastinationFactor { get; set; }
 
     public string? color { get; set; }
 }
 
-public class subTask
+public class subTasks
 {
-    [BsonId]
+    [BsonElement("subTaskId")]              
     [BsonRepresentation(BsonType.String)]
-    public string Id { get; set; }
+    public string subTaskId { get; set; }
 
     public string title { get; set; }
 

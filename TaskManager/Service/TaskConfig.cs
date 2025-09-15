@@ -42,34 +42,35 @@ namespace TaskManager.Service
             var user = await _userCollection.Find(u => u.id == userId).FirstOrDefaultAsync();
             if (user == null) throw new Exception("User not found");
 
-            var data = user.Task ?? new List<TaskProperty>();
+            var data = user.Tasks ?? new List<TaskProperty>();
             data.AddRange(tasks);
 
             await _userCollection.UpdateOneAsync(
                 u => u.id == userId,
-                Builders<User>.Update.Set(u => u.Task, data)
+                Builders<User>.Update.Set(u => u.Tasks, data)
             );
         }
-        public async Task CreateTaskForm(TaskProperty tasks, string token)
+        public async Task CreateTaskForm(TaskProperty task, string token)
         {
             var userId = GetUserId(token);
             var user = await _userCollection.Find(u => u.id == userId).FirstOrDefaultAsync();
             if (user == null) throw new Exception("User not found");
 
-            var data = user.Task ?? new List<TaskProperty>();
-            data.AddRange(tasks);
+            var data = user.Tasks ?? new List<TaskProperty>();
+            data.Add(task);
 
             await _userCollection.UpdateOneAsync(
                 u => u.id == userId,
-                Builders<User>.Update.Set(u => u.Task, data)
+                Builders<User>.Update.Set(u => u.Tasks, data)
             );
         }
+
 
         public async Task<List<TaskProperty>> GetAllTasks(string token)
         {
             var userId = GetUserId(token);
             var user = await _userCollection.Find(u => u.id == userId).FirstOrDefaultAsync();
-            return user?.Task ?? new List<TaskProperty>();
+            return user.Tasks;
         }
 
         public async Task<List<TaskProperty>> GetTasksByTitle(string token, string keyword)
@@ -84,12 +85,12 @@ namespace TaskManager.Service
             var user = await _userCollection.Find(u => u.id == userId).FirstOrDefaultAsync();
             if (user == null) return;
 
-            var tasks = user.Task ?? new List<TaskProperty>();
+            var tasks = user.Tasks ?? new List<TaskProperty>();
             tasks = tasks.Where(t => t.Id != taskId).ToList();
 
             await _userCollection.UpdateOneAsync(
                 u => u.id == userId,
-                Builders<User>.Update.Set(u => u.Task, tasks)
+                Builders<User>.Update.Set(u => u.Tasks, tasks)
             );
         }
         public async Task<bool> UpdatePartialTaskAsync(string userId, string taskId, BsonDocument updates)
@@ -98,12 +99,12 @@ namespace TaskManager.Service
 
             var filter = Builders<User>.Filter.And(
                 Builders<User>.Filter.Eq(u => u.id, userID),
-                Builders<User>.Filter.ElemMatch(u => u.Task, t => t.Id == taskId)
+                Builders<User>.Filter.ElemMatch(u => u.Tasks, t => t.Id == taskId)
             );
 
             var update = Builders<User>.Update.Combine(
                 updates.Elements.Select(kv =>
-                    Builders<User>.Update.Set($"Task.$.{kv.Name}", kv.Value))
+                    Builders<User>.Update.Set($"Tasks.$.{kv.Name}", kv.Value))
             );
 
             var result = await _userCollection.UpdateOneAsync(filter, update);
@@ -119,17 +120,17 @@ namespace TaskManager.Service
             var user = await _userCollection.Find(u => u.id == userId).FirstOrDefaultAsync();
             if (user == null) return;
 
-            var tasks = user.Task ?? new List<TaskProperty>();
+            var tasks = user.Tasks ?? new List<TaskProperty>();
             var task = tasks.FirstOrDefault(t => t.Id == taskId);
             if (task != null && task.subTasks != null)
             {
-                var subTask = task.subTasks.FirstOrDefault(st => st.Id == subTaskId);
+                var subTask = task.subTasks.FirstOrDefault(st => st.subTaskId == subTaskId);
                 if (subTask != null)
                 {
                     subTask.done = !subTask.done;
                     await _userCollection.UpdateOneAsync(
                         u => u.id == userId,
-                        Builders<User>.Update.Set(u => u.Task, tasks)
+                        Builders<User>.Update.Set(u => u.Tasks, tasks)
                     );
                 }
             }
@@ -163,7 +164,18 @@ namespace TaskManager.Service
         {
             var tasks = await GetAllTasks(token);
             var grouped = tasks
-                .GroupBy(t => t.startedAt.HasValue ? t.startedAt.Value.ToString("MM-yyyy") : "Unknown")
+              .GroupBy(t =>
+              {
+                  if (string.IsNullOrEmpty(t.startedAt))
+                      return "Unknown";
+
+                  if (long.TryParse(t.startedAt, out var ms))
+                  {
+                      var dt = DateTimeOffset.FromUnixTimeMilliseconds(ms).DateTime;
+                      return dt.ToString("MM-yyyy");
+                  }
+                  return "Unknown";
+              })
                 .ToDictionary(
                     g => g.Key,
                     g => new
@@ -215,24 +227,31 @@ namespace TaskManager.Service
             };
         }
 
-       
+
         public async Task<double> CalculateProcrastinationScore(TaskProperty task)
         {
             var now = DateTime.UtcNow;
-            var createdTime = task.createdAt;
+            DateTime createdTime;
+            if (!DateTime.TryParse(task.createdAt, out createdTime))
+            {
+           
+                createdTime = now;
+            }
+
             double daysSinceCreated = (now - createdTime).TotalDays;
             double score = 0;
+
             if (daysSinceCreated > 1) score += 0.2;
             if (daysSinceCreated > 3) score += 0.3;
             if (daysSinceCreated > 7) score += 0.4;
 
             var priorityWeight = new Dictionary<string, double>(StringComparer.OrdinalIgnoreCase)
-            {
-                { TaskConstants.priority.Urgent, 0.4 },
-                { TaskConstants.priority.High, 0.3 },
-                { TaskConstants.priority.Medium, 0.2 },
-                { TaskConstants.priority.Low, 0.1 }
-            };
+    {
+        { TaskConstants.priority.Urgent, 0.4 },
+        { TaskConstants.priority.High, 0.3 },
+        { TaskConstants.priority.Medium, 0.2 },
+        { TaskConstants.priority.Low, 0.1 }
+    };
 
             double weight = priorityWeight.ContainsKey(task.priority) ? priorityWeight[task.priority] : 0.0;
             score += weight;
@@ -241,6 +260,7 @@ namespace TaskManager.Service
             {
                 var dueTime = task.dueAt.Value;
                 double daysUntilDue = (dueTime - now).TotalDays;
+
                 if (daysUntilDue < 0) score += 0.5;
                 else if (daysUntilDue < 1) score += 0.3;
                 else if (daysUntilDue < 3) score += 0.2;
@@ -252,9 +272,10 @@ namespace TaskManager.Service
             return score;
         }
 
+
         public Task<string> GetAIAdvice(TaskProperty task, double score)
         {
-            var dueTime = task.dueAt.HasValue ? Math.Ceiling((task.dueAt.Value - DateTime.UtcNow).TotalDays) : double.MaxValue;
+            var dueTime = task.dueAt.HasValue? Math.Ceiling((task.dueAt.Value - DateTime.UtcNow).TotalDays) : double.MaxValue;
 
             if (dueTime < 0)
                 return Task.FromResult("⚠️ This task is already overdue! Prioritize finishing it immediately before starting new tasks.");

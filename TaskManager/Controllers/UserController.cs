@@ -89,7 +89,7 @@ namespace TaskManager.Controllers
                 Name = registerDto.Username,
                 Email = registerDto.Email,
                 Password= registerDto.Password,
-                Task=new List<TaskProperty>()
+                Tasks=new List<TaskProperty>()
             };
             await mongoCollection.InsertOneAsync(datas);
             return Ok(new
