@@ -30,8 +30,12 @@
       "DocumentGroups": [
         {
           "DockedHeight": 326,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -40,14 +44,10 @@
               "RelativeDocumentMoniker": "TaskManager\\Program.cs",
               "ToolTip": "D:\\BE\\TaskManager\\TaskManager\\Program.cs",
               "RelativeToolTip": "TaskManager\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-15T10:11:29.232Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -59,8 +59,7 @@
               "RelativeToolTip": "TaskManager\\Model\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T08:41:29.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-11T08:41:29.188Z"
             },
             {
               "$type": "Document",
@@ -72,8 +71,7 @@
               "RelativeToolTip": "TaskManager\\Context\\MongoDBContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T13:54:30.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-14T13:54:30.362Z"
             },
             {
               "$type": "Document",
@@ -85,8 +83,7 @@
               "RelativeToolTip": "TaskManager\\Service\\TaskConfig.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAWwEcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T12:37:48.604Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-14T12:37:48.604Z"
             },
             {
               "$type": "Document",
@@ -98,8 +95,7 @@
               "RelativeToolTip": "TaskManager\\Model\\TaskProperty.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAAACkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T13:43:03.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-13T13:43:03.448Z"
             }
           ]
         },

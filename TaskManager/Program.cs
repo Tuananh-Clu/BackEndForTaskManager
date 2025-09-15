@@ -17,7 +17,7 @@ builder.Services.AddCors(a =>
 {
     a.AddPolicy("AllowAll", p =>
     {
-        p.WithOrigins("https://taskmanagerr-hixciq8am-tuananh-clus-projects.vercel.app/")
+        p.AllowAnyOrigin()
          .AllowAnyMethod()
          .AllowAnyHeader();
     });
